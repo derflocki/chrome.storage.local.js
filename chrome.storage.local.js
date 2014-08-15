@@ -1,4 +1,7 @@
 (function (window) {
+	if(chrome && chrome.storage && chrome.storage.local) {
+		return;
+	}
 	if(window.localStorage) {
 		var window_localStorage = window.localStorage;
 		var prefix = "chrome.storage.local.";
