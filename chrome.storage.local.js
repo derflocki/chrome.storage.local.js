@@ -1,5 +1,5 @@
 (function (window) {
-	if(chrome && chrome.storage && chrome.storage.local) {
+	if(window.chrome && window.chrome.storage && window.chrome.storage.local) {
 		return;
 	}
 	if(window.localStorage) {
@@ -104,7 +104,7 @@
 					}
 				}
 			}
-		}
+		};
 		if(!window.chrome) {
 			window.chrome = {
 				storage: {
@@ -116,5 +116,5 @@
 				local: shiv
 			};
 		}
-	} 
+	}
 })(this);
