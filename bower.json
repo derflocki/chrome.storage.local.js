@@ -1,25 +1,25 @@
 {
 	"name": "chrome.storage.local.js",
 	"main": "chrome.storage.local.js",
-	"version": "0.1.0",
+	"version": "0.1.4",
 	"homepage": "https://github.com/derflocki/chrome.storage.local.js",
 	"authors": [
 		"Florian Dorn <florian.dorn@gmail.com>"
-		],
+	],
 	"description": "A chrome.storage.local compatible API for browsers that support window.localStorage",
 	"keywords": [
 		"chrome",
-	"storage",
-	"local",
-	"API",
-	"browser"
-		],
+		"storage",
+		"local",
+		"API",
+		"browser"
+	],
 	"license": "MIT",
 	"ignore": [
 		"**/.*",
-	"node_modules",
-	"bower_components",
-	"test",
-	"tests"
-		]
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
 }

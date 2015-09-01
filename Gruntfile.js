@@ -2,6 +2,12 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
+		jshint: {
+			src: 'chrome.storage.local.js',
+			directives: {
+				browser: true,
+			}
+		},
 		uglify: {
 			dist: {
 				options: {
@@ -15,13 +21,14 @@ module.exports = function(grunt) {
 		watch: {
 			dist: {
 				files: ['chrome.storage.local.js'],
-				tasks: ['uglify']
+				tasks: ['jshint', 'uglify']
 			}
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
 
-	grunt.registerTask('default', ['uglify']);
+	grunt.registerTask('default', ['jshint', 'uglify']);
 };
