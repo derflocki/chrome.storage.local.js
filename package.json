@@ -1,6 +1,7 @@
 {
   "name": "chrome.storage.local.js",
-  "version": "0.1.4",
+  "main": "chrome.storage.local.js",
+  "version": "0.1.5",
   "repository": {
     "type": "git",
     "url": "git://github.com/derflocki/chrome.storage.local.js.git"
